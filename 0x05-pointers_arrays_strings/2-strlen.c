@@ -5,7 +5,7 @@
 *Return:returns the length of the string.
 */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int x = 0;
 /*the counter x will incremeant till the last character is NULL,\0*/

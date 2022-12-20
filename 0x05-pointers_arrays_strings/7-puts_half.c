@@ -5,7 +5,7 @@
  *@str:This is the input string.
  *Return:Nothing to return.
  */
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int count = 0, i;
 while (count >= 0)

@@ -5,17 +5,23 @@
 *@str:input string.
 *Return: no return.
 */
-void _puts(char *str);
-int x = 0;
+void _puts(char *str)
+{
+	int i = 0;
+	int j = 0;
+	char null_char;
 
-	while (x >= 0)
+	null_char = 'x';
+
+	while (null_char != '\0')
 	{
-	if (str[x] == '\0')
-	{
+		null_char = str[i];
+		i++;
+	}
+	i -= 1;
+
+	for (j = 0; j < i; j++)
+		_putchar(*(str + j));
 	_putchar('\n');
-	break;
-	}
-	_putchar(str[x]);
-	x++;
-	}
+
 }
